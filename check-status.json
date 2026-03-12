@@ -1,9 +1,0 @@
-{
-  "last_fuel": {
-    "quantity": 20,
-    "station_id": "ST102",
-    "datetime": "2026-03-11 15:40"
-  },
-  "remaining_today": 10,
-  "max_daily_limit": 30
-}
