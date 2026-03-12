@@ -1,0 +1,14 @@
+[
+    {
+        "mobile": "0170078112",
+        "name": "Vowner",
+        "type" : "vo",
+        "token":"token1"
+    },
+    {
+        "mobile": "0170078111",
+        "name": "FSowner",
+        "type" : "fso",
+        "token":"token2"
+    }
+]
