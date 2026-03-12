@@ -1,14 +1,144 @@
-[
+{
+  "status": [
     {
-        "mobile": "0170078112",
-        "name": "Vowner",
-        "type" : "vo",
-        "token":"token1"
+      "plate_number": "DHK-METRO GA 1234",
+      "last_fuel": {
+        "quantity": 5,
+        "station_id": "ST102",
+        "datetime": "2026-03-11 15:40"
+      },
+      "remaining_today": 5,
+      "max_daily_limit": 10
     },
     {
-        "mobile": "0170078111",
-        "name": "FSowner",
-        "type" : "fso",
-        "token":"token2"
+      "plate_number": "DHK-METRO GA 12345",
+      "last_fuel": {
+        "quantity": 5,
+        "station_id": "ST103",
+        "datetime": "2026-03-11 15:40"
+      },
+      "remaining_today": 5,
+      "max_daily_limit": 10
     }
-]
+  ],
+  "fuel-history": [
+    {
+      "id": 1,
+      "plate_number": "DHK-METRO GA 12345",
+      "station": "Station A",
+      "quantity": 5,
+      "datetime": "2026-03-11 15:40"
+    },
+    {
+      "id": 2,
+      "plate_number": "DHK-METRO GA 1234",
+      "station": "Station B",
+      "quantity": 5,
+      "datetime": "2026-03-11 15:40"
+    }
+  ],
+  "station": [
+    {
+      "id": "ST101",
+      "name": "Station A",
+      "district": "Dhaka",
+      "location": "Adabor",
+      "address": "123 Main Street, Adabor, Dhaka",
+      "gps": {
+        "latitude": 23.7808875,
+        "longitude": 90.2792371
+      },
+      "fuel_types": [
+        "Petrol",
+        "Diesel"
+      ],
+      "operating_hours": "24/7"
+    },
+    {
+      "id": "ST102",
+      "name": "Station A",
+      "district": "Dhaka",
+      "location": "Adabor",
+      "address": "123 Main Street, Adabor, Dhaka",
+      "gps": {
+        "latitude": 23.7808875,
+        "longitude": 90.2792371
+      },
+      "fuel_types": [
+        "Petrol",
+        "Diesel"
+      ],
+      "operating_hours": "24/7"
+    }
+  ],
+  "vehicle": [
+    {
+      "plate_number": "DHK-METRO GA 1234",
+      "owner_name": "John Doe",
+      "owner_mobile": "+880123456789",
+      "vehicle_type": "Car",
+      "fuel_type": "Petrol"
+    },
+    {
+      "plate_number": "DHK-METRO GA 12345",
+      "owner_name": "Jane Smith",
+      "owner_mobile": "+880987654321",
+      "vehicle_type": "Motorcycle",
+      "fuel_type": "Diesel"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "mobile": "+880123456789"
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "mobile": "+880987654321"
+    }
+  ],
+  "request-otp": [
+    {
+      "mobile": "+880123456789",
+      "plate_number": "DHK-METRO GA 1234",
+      "otp": "123456"
+    },
+    {
+      "mobile": "+880987654321",
+      "plate_number": "DHK-METRO GA 12345",
+      "otp": "654321"
+    }
+  ],
+  "vehicle-types": [
+    {
+      "type": "Car",
+      "fuel_type": "Petrol",
+      "max_daily_limit": 10
+    },
+    {
+      "type": "Motorcycle",
+      "fuel_type": "Petrol",
+      "max_daily_limit": 5
+    }
+  ],
+  "signup": [
+    {
+      "name": "John Doe",
+      "mobile": "+880123456789",
+      "plate_number": "DHK-METRO GA 1234",
+      "otp": "123456",
+      "vehicle_type": "Car",
+      "token": "abc123xyz"
+    },
+    {
+      "name": "Jane Smith",
+      "mobile": "+880987654321",
+      "plate_number": "DHK-METRO GA 12345",
+      "otp": "654321",
+      "vehicle_type": "Motorcycle",
+      "token": "def456uvw"
+    }
+  ]
+}
